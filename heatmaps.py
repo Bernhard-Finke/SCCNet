@@ -138,7 +138,8 @@ def create_single_heatmap(wsi_path, score_path, heatmap_save_name, heatmap_confi
             score = scores[idx]
             coord = coords[idx]
             if heatmap_mode == 'extreme':
-                out_condition = not low_thresh <= score <= high_thresh
+                out_condition = score <= low_thresh or score >= high_thresh
+                #out_condition = not low_thresh <= score <= high_thresh
             elif heatmap_mode == 'binarise':
                 out_condition = score >= threshold
             else:
