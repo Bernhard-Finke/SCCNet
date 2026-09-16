@@ -16,7 +16,8 @@ To get started with the code, simply navigate into a new directory, and run:
     source scc_env/bin/activate
     pip install -r requirements.txt
     
-    **You can use UV instead of venv if you prefer**
+    
+You can use UV instead of venv if you prefer
 
 # Sample data
 
